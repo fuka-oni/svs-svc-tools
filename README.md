@@ -1,2 +1,18 @@
 # svs-svc-tools
-Ferramentas para facilitar na criação e configuração de bancos de voz
+ Ferramentas para facilitar na criação e configuração de bancos de voz
+## Programas incluidos:
+ 1. Bach Replace / FazedorDeReclist
+ 2. hiraganator
+ 3. otobaser
+## Como usar:
+
+  1. Bach Replace / FazedorDeReclist <br>
+    O programa ultiliza de uma base e de um caractere o qual você quer substituir. <br>
+ex: String tanto .txt ou input do programa: <br>
+`` k@_b@_b@_ --> simbulo a ser substituido --> @ --> [vogais: a e i] --> [ka_ba_ba_ ke_be_be_ ki_bi_bi_] `` <br>
+
+ 2. hiraganator <br>
+    Transforam oto.ini em romaji em hiragana, no momento só funciona pra CV <br>
+
+ 3. otobaser <br>
+    Criador de otobase CV e VV, só arrastar a reclist e ele vai criar a otobase <br>
