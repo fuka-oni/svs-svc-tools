@@ -1,12 +1,13 @@
 # svs-svc-tools
  Ferramentas para facilitar na criação e configuração de bancos de voz
+ 
 ## Programas incluidos:
- 1. Bach Replace / FazedorDeReclist
+ 1. Bach Replace
  2. hiraganator
  3. otobaser
 ## Como usar:
 
-  1. Bach Replace / FazedorDeReclist <br>
+  1. Bach Replace <br>
     O programa ultiliza de uma base e de um caractere o qual você quer substituir. <br>
 ex: String tanto .txt ou input do programa: <br>
 `` k@_b@_b@_ --> simbulo a ser substituido --> @ --> [vogais: a e i] --> [ka_ba_ba_ ke_be_be_ ki_bi_bi_] `` <br>
