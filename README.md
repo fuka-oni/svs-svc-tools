@@ -1,27 +1,27 @@
 # svs-svc-tools
- Ferramentas para facilitar na criação e configuração de bancos de voz
+  Tools to facilitate the creation and configuration of voice banks
  
-> [!IMPORTANT]  
-> Alguns das ferramentas foram criadas com ajuda do chatgpt então tome cuidado ao rodar, sempre fazer um backup.
+> [!IMPORTANT]
+> Some of the tools were created with the help of chatgpt so be careful when running, always make a backup.
  
 ## SVS:
 
-  1. Bach Replace <br>
-    O programa ultiliza de uma base e de um caractere o qual você quer substituir. <br>
-ex: String tanto .txt ou input do programa: <br>
-`` k@_b@_b@_ --> simbulo a ser substituido --> @ --> [vogais: a e i] --> [ka_ba_ba_ ke_be_be_ ki_bi_bi_] `` <br>
+   1. Bach Replace <br>
+     The program uses a base and a character which you want to replace. <br>
+ex: String either .txt or program input: <br>
+`` k@_b@_b@_ --> symbol to be replaced --> @ --> [vowels: a and i] --> [ka_ba_ba_ ke_be_be_ ki_bi_bi_] `` <br>
 
-  2. Lab slur Remover <br>
-   Remove as vogais duplicadas nos lab
+   2. Lab slur Remover <br>
+    Remove doubled vowels in lab
 
-  3. Pau SP br AP <br>
-   Converte os ``pau`` para ``SP`` e ``br`` para ``AP``
+   3. Pau SP br AP <br>
+    Converts ``pau`` to ``SP`` and ``br`` to ``AP``
 
 
 ## UTAU
 
- 1. hiraganator <br>
-    Transforam oto.ini em romaji em hiragana, no momento só funciona pra CV <br>
+  1. hiraganator <br>
+     They transformed oto.ini into romaji in hiragana, at the moment it only works for CV <br>
 
- 2. otobaser <br>
-    Criador de otobase CV e VV, só arrastar a reclist e ele vai criar a otobase <br>
+  2. otobaser <br>
+     CV and VV otobase creator, just drag the reclist and it will create the otobase <br>
