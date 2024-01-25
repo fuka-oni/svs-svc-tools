@@ -8,7 +8,7 @@ def substituir_caracteres(string, char_substituir, lista_substitutos):
 def main():
     string_original = input("Digite o texto ou o caminho para o arquivo .txt contendo a string original: ")
     if string_original.endswith('.txt'):
-        with open(string_original, 'r') as file:
+        with open(string_original, 'r', encoding="utf8") as file:
             string_original = file.read()
 
     char_substituir = input("Digite o caractere que precisa ser substituído: ")
@@ -21,7 +21,7 @@ def main():
 
     # Salvar em um arquivo txt
     nome_arquivo = "resultados.txt"
-    with open(nome_arquivo, "w") as arquivo:
+    with open(nome_arquivo, "w", encoding="utf8") as arquivo:
         for resultado in resultados:
             arquivo.write(resultado + "\n")
 

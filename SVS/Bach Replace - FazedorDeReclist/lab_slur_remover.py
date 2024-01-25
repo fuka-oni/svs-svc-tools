@@ -9,7 +9,7 @@ def processar_arquivo_lab(nome_arquivo):
     comeco, final, fonema = None, None, None
     vogal_anterior = None
 
-    with open(nome_arquivo, 'r') as arquivo:
+    with open(nome_arquivo, 'r', encoding="utf8") as arquivo:
         for linha in arquivo:
             partes = linha.split()
             if len(partes) == 3:
@@ -42,7 +42,7 @@ def processar_arquivo_lab(nome_arquivo):
 
 def salvar_arquivo_modificado(nome_arquivo, linhas_modificadas):
     caminho_mod = os.path.join('mod', nome_arquivo)
-    with open(caminho_mod, 'w') as arquivo_modificado:
+    with open(caminho_mod, 'w', encoding="utf8") as arquivo_modificado:
         arquivo_modificado.writelines(linhas_modificadas)
 
 def processar_e_salvar_arquivo(nome_arquivo):
