@@ -1,14 +1,14 @@
 import os
 
 def modificar_arquivo(nome_arquivo):
-    with open(nome_arquivo, 'r') as arquivo:
+    with open(nome_arquivo, 'r', encoding="utf8") as arquivo:
         linhas = arquivo.readlines()
     
     for i in range(len(linhas)):
         linhas[i] = linhas[i].replace('pau', 'SP')
         linhas[i] = linhas[i].replace('br', 'AP')
     
-    with open(nome_arquivo, 'w') as arquivo:
+    with open(nome_arquivo, 'w', encoding="utf8") as arquivo:
         arquivo.writelines(linhas)
 
 # Obtém o caminho do diretório onde o script está localizado

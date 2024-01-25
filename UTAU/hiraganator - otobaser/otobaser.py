@@ -1,5 +1,7 @@
+import utils
+
 def process_file(file_name):
-    with open(file_name, 'r') as file:
+    with open(file_name, 'r', encoding="utf8") as file:
         lines = file.readlines()
 
     result = []
@@ -23,7 +25,7 @@ def process_file(file_name):
     return result
 
 def write_output(file_name, output):
-    with open(file_name, 'w') as file:
+    with open(file_name, 'w', encoding="utf8") as file:
         for line in output:
             file.write(line + '\n')
 

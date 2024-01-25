@@ -1,4 +1,6 @@
 import os
+import pathlib
+import utils
 
 def convert_to_hiragana(text):
     hiragana_map = {
@@ -49,10 +51,11 @@ def convert_to_hiragana(text):
     converted_text += ',' + ','.join(parts[1:])
     return converted_text
 
-file_name = "oto.ini"
-output_file_name = "oto_hiragana.ini"
+file_name = pathlib.Path("oto.ini").absolute()
+output_file_name = pathlib.Path("oto_hiragana.ini").absolute()
+oto_encoding = utils.encoding_from_character_yaml(file_name)
 
-with open(file_name, 'r') as file:
+with open(file_name, 'r', encoding = oto_encoding) as file:
     lines = file.readlines()
 
 converted_lines = []
@@ -65,7 +68,7 @@ for line in lines:
     else:
         converted_lines.append(line)
 
-with open(output_file_name, 'w') as output_file:
+with open(output_file_name, 'w', encoding = oto_encoding) as output_file:
     output_file.writelines(converted_lines)
 
 print(f"Converted file saved as '{output_file_name}'")
